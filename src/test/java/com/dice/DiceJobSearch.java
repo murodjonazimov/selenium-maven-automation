@@ -1,5 +1,6 @@
 package com.dice;
 
+import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -55,7 +56,9 @@ public class DiceJobSearch {
     }else {
       System.out.println("Step Feild Keyword: " + keyword + "Search returned" + countResult + " Results in  " + location);
     }
+    
     driver.close();
+    System.out.println("Test Complited:" + LocalDateTime.now());
     
     
     
